@@ -1,0 +1,41 @@
+:root {
+    --fff: #fff;
+    --090e22: #090e22;
+    --1d1e33: #1d1e33;
+    --dfdfdf: #dfdfdf;
+    --ccc: #ccc;
+    --444: #444;
+    --f44236: #f44236;
+    --12db34: #12db34;
+    --dbce12: #dbce12;
+    --db6212: #db6212;
+    --db1912: #db1912;
+    --secondary: rgb(91 89 89 / 72%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--fff);
+    background-image:url('/indice.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+}
